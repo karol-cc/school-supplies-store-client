@@ -1,0 +1,52 @@
+.edit-promo-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.btn-volver {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.edit-promo-container h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-promocion {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input[type="number"] {
+  padding: 8px;
+  font-size: 16px;
+  width: 90%;
+}
+
+.btn-confirmar {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}

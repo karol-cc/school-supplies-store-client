@@ -1,0 +1,33 @@
+.profile-page-container {
+  padding: 25px;
+  max-width: 1200px;
+  margin: 80px auto 0 auto;
+  font-family: "Poppins", sans-serif;
+  color: #0e0e0f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.profile-header h1 {
+  font-size: 30px;
+  color: #000000;
+  margin: 0;
+}
+
+.profile-content {
+  margin-top: 30px;
+  flex: 1;
+}

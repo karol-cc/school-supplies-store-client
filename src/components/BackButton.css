@@ -1,0 +1,26 @@
+.boton-volver {
+  padding: 6px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+
+  margin-right: 18px;
+}
+
+.boton-volver .icon-volver {
+  margin-right: 1px;
+}
+
+.boton-volver:hover {
+  background-color: #fff;
+  color: #000000;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

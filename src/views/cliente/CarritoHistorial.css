@@ -1,0 +1,48 @@
+.btn-pagar-carrito {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-pagar-carrito:hover {
+  background-color: #45a049;
+}
+
+.payment-info p {
+  color: #000;
+  font-size: 0.95rem;
+  margin: 6px 0;
+}
+
+.payment-info strong {
+  color: #000;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.status-pendiente {
+  background-color: #0047ab;
+  color: #ffffff;
+}
+
+.status-completado {
+  background-color: #00b873;
+  color: #ffffff;
+}

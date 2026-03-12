@@ -1,0 +1,107 @@
+.admin-dashboard {
+  position: relative;
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #fcf2ae 0%, #f8f2dc 100%);
+  min-height: 50vh;
+  margin-top: 70px;
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  color: #5d4702;
+  margin-bottom: 10px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.dashboard-subtitle {
+  font-size: 1.1rem;
+  color: #b38b00;
+  margin-bottom: 50px;
+  font-style: italic;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.dashboard-card {
+  background: linear-gradient(145deg, #fff9cc, #ffe58a);
+  border-radius: 20px;
+  padding: 40px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(255, 229, 138, 0.3);
+  border: 2px solid #fff9cc;
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(255, 229, 138, 0.5);
+  background: linear-gradient(145deg, #ffe58a, #ffde5a);
+}
+
+.dashboard-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ffde5a, #ffd700);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  color: #5d4200;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.card-hover {
+  color: #8b6b00;
+  font-size: 0.9rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.dashboard-card:hover .card-hover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dashboard-card:active {
+  transform: translateY(-5px) scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .dashboard-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}

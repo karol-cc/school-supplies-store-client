@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+:root {
+  --color-bg: linear-gradient(145deg, #f9fafb, #eef1f5);
+  --color-card: #ffffff;
+  --color-border: rgba(0, 0, 0, 0.05);
+  --color-text: #1a1a1a;
+  --color-muted: #555;
+  --color-accent: #2ecc71;
+  --color-accent-hover: #25b862;
+  --radius-xl: 22px;
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow-soft: 0 10px 25px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 15px 35px rgba(0, 0, 0, 0.12);
+  font-family: "Inter", sans-serif;
+  color-scheme: light;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+}
+
+.detalle-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px;
+  margin: 60px auto;
+  width: 90%;
+  max-width: 1200px;
+  background: var(--color-card);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition);
+}
+
+.detalle-container:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+}
+
+.detalle-imagen {
+  flex: 1;
+  min-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carrusel {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.carrusel button {
+  background: rgba(0, 0, 0, 0.05);
+  border: none;
+  border-radius: 50%;
+  color: #333;
+  font-size: 24px;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.carrusel button:hover {
+  background: rgba(0, 0, 0, 0.08);
+  transform: scale(1.05);
+}
+
+.detalle-imagen img {
+  width: 420px;
+  max-width: 90%;
+  border-radius: 16px;
+  object-fit: contain;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transition: var(--transition);
+}
+
+.detalle-imagen img:hover {
+  transform: scale(1.03);
+}
+
+.detalle-info {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+}
+
+.detalle-info h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--color-text);
+}
+
+.descripcion {
+  color: var(--color-muted);
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.precio-promocion-final {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.precio-original .tachado {
+  text-decoration: line-through;
+  color: #a0a0a0;
+  font-size: 1rem;
+}
+
+.stock-disponible {
+  color: var(--color-accent);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+}
+
+.sin-stock {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.detalle-categorias,
+.vendedor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}
+
+.btn-agregar {
+  margin-top: 15px;
+  padding: 14px 28px;
+  background: var(--color-accent);
+  border: none;
+  border-radius: 14px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  box-shadow: 0 8px 20px rgba(46, 204, 113, 0.25);
+  transition: var(--transition);
+}
+
+.btn-agregar:hover {
+  background: var(--color-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(46, 204, 113, 0.35);
+}
+
+.detalle-compra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.detalle-info {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+@media (max-width: 900px) {
+  .detalle-container {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .detalle-imagen img {
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .detalle-info {
+    text-align: center;
+  }
+
+  .btn-agregar {
+    width: 100%;
+  }
+}
+
+.loading {
+  text-align: center;
+  color: #777;
+  font-size: 1.2rem;
+  margin-top: 120px;
+}
+
+.link-vendedor {
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.link-vendedor:hover {
+  color: #0056b3;
+}
+
+.link-vendedor {
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.link-vendedor:hover {
+  color: #0056b3;
+}
+
+.contador span {
+  margin: 0 12px;
+  font-weight: 500;
+  min-width: 24px;
+  text-align: center;
+  display: inline-block;
+}
+
+.contador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.detalle-container {
+  display: flex;
+  gap: 40px;
+}
+
+.detalle-imagen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.detalle-extra {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detalle-compra {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.cantidad-label {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contador {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.contador button {
+  background: #f2f2f2;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.detalle-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.volver-externo {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.btn-volver {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+}
+
+.contador span {
+  margin: 0 10px;
+  min-width: 24px;
+  text-align: center;
+}
+
+.link-vendedor {
+  font-weight: 500;
+  color: #333;
+}
+
+.btn-edit,
+.btn-promo,
+.btn-delete {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.btn-edit {
+  background-color: #007bff;
+  color: white;
+}
+.btn-edit:hover {
+  background-color: #0069d9;
+  transform: translateY(-1px);
+}
+
+.btn-promo {
+  background-color: #17a2b8;
+  color: white;
+}
+.btn-promo:hover {
+  background-color: #138496;
+  transform: translateY(-1px);
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+.btn-delete:hover {
+  background-color: #c82333;
+  transform: translateY(-1px);
+}

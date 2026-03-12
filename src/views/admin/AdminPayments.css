@@ -1,0 +1,333 @@
+.admin-payments {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #fffdf0 0%, #fff9e6 100%);
+  min-height: 100vh;
+  position: relative;
+}
+
+.admin-title {
+  font-size: 2.2rem;
+  color: #8b6b00;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.search-section {
+  background: linear-gradient(145deg, #fff9cc, #ffe58a);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 25px rgba(255, 229, 138, 0.3);
+  border: 2px solid #fff9cc;
+}
+
+.search-controls {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-select {
+  padding: 12px 20px;
+  border: 2px solid #ffe58a;
+  border-radius: 15px;
+  font-size: 1rem;
+  background: white;
+  color: #5d4200;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-select:focus {
+  outline: none;
+  border-color: #ffde5a;
+  box-shadow: 0 0 0 3px rgba(255, 222, 90, 0.2);
+}
+
+.search-input-adminpayment {
+  padding: 12px 20px;
+  border: 2px solid #ffe58a;
+  border-radius: 15px;
+  font-size: 1rem;
+  width: 300px;
+  background: white;
+  color: #5d4200;
+  transition: all 0.3s ease;
+}
+
+.search-input-adminpayment:focus {
+  outline: none;
+  border-color: #ffde5a;
+  box-shadow: 0 0 0 3px rgba(255, 222, 90, 0.2);
+}
+
+.search-input-adminpayment::placeholder {
+  color: #b38b00;
+}
+
+.payments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.payment-card {
+  background: linear-gradient(145deg, #fff9cc, #ffe58a);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(255, 229, 138, 0.3);
+  border: 2px solid #fff9cc;
+  transition: all 0.3s ease;
+}
+
+.payment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(255, 229, 138, 0.5);
+}
+
+.payment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.payment-name {
+  margin: 0;
+  color: #5d4200;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.payment-role {
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.payment-role.seller {
+  background: linear-gradient(145deg, #ffde5a, #ffd700);
+  color: #5d4200;
+}
+
+.payment-role.payment {
+  background: linear-gradient(145deg, #a8e6cf, #88d3ce);
+  color: #1a5350;
+}
+
+.payment-info {
+  margin-bottom: 25px;
+}
+
+.payment-info p {
+  margin: 10px 0;
+  color: #8b6b00;
+  font-size: 0.95rem;
+}
+
+.payment-info strong {
+  color: #5d4200;
+}
+
+.payment-stats {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid #fff9cc;
+}
+
+.stat-label {
+  display: block;
+  color: #8b6b00;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #5d4200;
+}
+
+.loading,
+.no-data {
+  text-align: center;
+  padding: 60px;
+  color: #8b6b00;
+  font-size: 1.1rem;
+  grid-column: 1 / -1;
+  background: linear-gradient(145deg, #fff9cc, #ffe58a);
+  border-radius: 20px;
+  border: 2px solid #fff9cc;
+}
+
+@media (max-width: 768px) {
+  .payments-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-controls {
+    flex-direction: column;
+  }
+
+  .search-input-adminpayment {
+    width: 100%;
+  }
+
+  .payment-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.calendar-container {
+  position: relative;
+}
+
+.calendar-btn {
+  background: linear-gradient(145deg, #ffef9f, #ffd95a);
+  color: #4a3500;
+  border: 2px solid #f7d046;
+  border-radius: 15px;
+  padding: 12px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 213, 70, 0.35);
+}
+
+.calendar-btn:hover {
+  background: linear-gradient(145deg, #ffe76a, #ffcf40);
+  color: #3b2a00;
+  box-shadow: 0 6px 14px rgba(255, 210, 60, 0.45);
+  transform: translateY(-2px);
+}
+
+.calendar-popup {
+  position: absolute;
+  top: 60px;
+  z-index: 10;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(255, 217, 60, 0.25);
+  background: #fffef5;
+  border: 2px solid #ffe58a;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  background: white;
+  border: 2px solid #ffe58a;
+  border-radius: 15px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: #5d4200;
+  box-shadow: 0 2px 6px rgba(255, 229, 138, 0.3);
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #ffde5a;
+  box-shadow: 0 0 0 3px rgba(255, 222, 90, 0.2);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-btn {
+  background: linear-gradient(145deg, #ffef9f, #ffd95a);
+  border: 2px solid #f7d046;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #4a3500;
+  box-shadow: 0 4px 10px rgba(255, 213, 70, 0.35);
+}
+
+.search-btn:hover {
+  background: linear-gradient(145deg, #ffe76a, #ffcf40);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(255, 210, 60, 0.45);
+}
+
+.view-all-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.view-all-btn {
+  background: linear-gradient(145deg, #ffef9f, #ffd95a);
+  color: #4a3500;
+  border: 2px solid #f7d046;
+  border-radius: 15px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 213, 70, 0.35);
+}
+
+.view-all-btn:hover {
+  background: linear-gradient(145deg, #ffe76a, #ffcf40);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(255, 210, 60, 0.45);
+}
+
+.rdrCalendarWrapper {
+  background-color: #fff9e6 !important;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(255, 190, 0, 0.3);
+}
+
+.rdrDaySelected,
+.rdrDayStartPreview,
+.rdrDayEndPreview {
+  background: linear-gradient(135deg, #ffb300, #ffd54f) !important;
+  color: white !important;
+  border-radius: 50% !important;
+}
+
+.rdrDay:hover .rdrDayNumber span {
+  background: none !important;
+  cursor: pointer;
+}
+
+.rdrDay:hover .rdrDayNumber span::after {
+  display: none !important;
+}
+
+.rdrDayInRange {
+  background: none !important;
+}
+
+.rdrDayNumber span {
+  color: #4e3b00 !important;
+  font-weight: 500;
+}
+
+.rdrMonthAndYearPickers select,
+.rdrNextPrevButton {
+  color: #c47f00 !important;
+}

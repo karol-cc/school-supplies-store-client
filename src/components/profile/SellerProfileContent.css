@@ -1,0 +1,116 @@
+.seller-profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background: #e1ffdd;
+  border: 1px solid #30ad20;
+  border-radius: 20px;
+  padding: 15px 75px 70px;
+  max-width: 750px;
+  margin: 30px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.seller-profile-icon {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 6px rgba(14, 163, 22, 0.4);
+}
+
+.seller-profile-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.seller-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.username-seller {
+  font-size: 20px;
+  font-weight: 700;
+  color: #042900;
+  margin: 0;
+}
+
+.role-tag-seller {
+  background-color: #79eb6c;
+  color: #000;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: fit-content;
+  line-height: 3;
+}
+
+.profile-data-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 15px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.data-item-seller {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 3px 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #a4f0a1;
+}
+
+.data-item-seller strong {
+  display: block;
+  font-weight: 600;
+  color: #0c3e00;
+  margin-bottom: 4px;
+}
+
+.data-item-seller span {
+  color: #333333;
+  font-size: 14px;
+}
+
+.btn-crear {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background-color: #30ad20;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(48, 173, 32, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-crear:hover {
+  background-color: #27961c;
+  box-shadow: 0 6px 16px rgba(48, 173, 32, 0.4);
+  transform: translateY(-1px);
+}
+
+.btn-crear svg {
+  stroke-width: 2.2;
+}

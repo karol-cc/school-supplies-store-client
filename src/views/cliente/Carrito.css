@@ -1,0 +1,215 @@
+.carrito-page {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #f8f8ff;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  margin-top: 70px;
+}
+
+.carrito-titulo {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #4b0082;
+  margin-bottom: 30px;
+}
+
+.carrito-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 35px;
+}
+
+.carrito-items {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.carrito-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e7d9fb;
+  border-radius: 12px;
+  padding: 12px 18px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.carrito-item:hover {
+  transform: scale(1.01);
+  background: #dec4fa;
+}
+
+.carrito-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.carrito-info {
+  flex: 1;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.carrito-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.carrito-price {
+  font-size: 1rem;
+  color: #444;
+}
+
+.carrito-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.carrito-delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #444;
+  transition: color 0.2s;
+}
+
+.carrito-delete:hover {
+  color: #ff4d4f;
+}
+
+.carrito-quantity .contador {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 4px 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  gap: 8px;
+}
+
+.carrito-summary {
+  flex: 1;
+  background: #f0e8ff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carrito-summary_title {
+  font-size: 1.6rem;
+  color: #4b0082;
+  margin-bottom: 10px;
+}
+
+.carrito-summary_total {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.carrito-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn-eliminar-carrito,
+.btn-confirmar-carrito,
+.btn-pagar {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.btn-eliminar-carrito {
+  background: #ff7070;
+}
+
+.btn-confirmar-carrito {
+  background: #9370db;
+}
+
+.btn-pagar {
+  background: #5cb85c;
+}
+
+.btn-eliminar-carrito:hover {
+  background: #ff4d4f;
+  transform: scale(1.03);
+}
+
+.btn-confirmar-carrito:hover {
+  background: #7b5dc8;
+  transform: scale(1.03);
+}
+
+.btn-pagar:hover {
+  background: #4da84d;
+  transform: scale(1.03);
+}
+
+.carrito-vacio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.carrito-vacio-img {
+  width: 250px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+  transition: transform 0.3s;
+}
+
+.carrito-vacio-img:hover {
+  transform: scale(1.05);
+}
+
+.carrito-vacio-texto {
+  font-size: 1.3rem;
+  color: #4b0082;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.carrito-summary.vacio {
+  opacity: 0.7;
+  pointer-events: none;
+  user-select: none;
+}
+
+.btn-eliminar-carrito:disabled {
+  background: #f9b9b9;
+  cursor: not-allowed;
+}
+
+.btn-confirmar-carrito:disabled {
+  background: #b9a2eb;
+  cursor: not-allowed;
+}
+
+.btn-pagar:disabled {
+  background: #9ed99e;
+  cursor: not-allowed;
+}
