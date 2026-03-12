@@ -92,7 +92,7 @@ The app will be available at `http://localhost:5173`
 
 ## 🔗 Related
 
-- [Backend API — school-supplies-store](https://github.com/your-username/school-supplies-store)
+- [Backend API — school-supplies-store](https://github.com/karol-cc/school-supplies-store)
 
 ---
 
