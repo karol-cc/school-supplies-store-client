@@ -1,6 +1,6 @@
 # 🛒 School Supplies Store — Frontend
 
-Frontend web application for a school supplies e-commerce marketplace. Built with React and connected to a [REST API backend](https://github.com/your-username/school-supplies-store).
+Frontend web application for a school supplies e-commerce marketplace. Built with React and connected to a [REST API backend](https://github.com/karol-cc/school-supplies-store).
 
 ## 🚀 Tech Stack
 
@@ -45,7 +45,7 @@ src/
 ### Prerequisites
 
 - Node.js 18+
-- The [backend API](https://github.com/your-username/school-supplies-store) running on `http://localhost:4002`
+- The [backend API](https://github.com/karol-cc/school-supplies-store) running on `http://localhost:4002`
 
 ### Setup
 
